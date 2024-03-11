@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Blog Template</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient color */
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #ff4d4d, #ffaf40); /* Gradient color */
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .template {
+            background: linear-gradient(to right, #ffffff, #ffcc66); /* Gradient color */
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .template:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #ff7e5f; /* Gradient color */
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p.template-description {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: linear-gradient(to right, #ff4d4d, #ffaf40); /* Gradient color */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <h1>Choose Your Blog Template</h1>
+</header>
+
+<!-- Main Content Section -->
+<main>
+    <!-- Template 1 -->
+    <div class="template" onclick="selectTemplate('Template 1')">
+        <h2>Template 1</h2>
+        <p class="template-description">A clean and minimalistic design for a focused reading experience.</p>
+    </div>
+
+    <!-- Template 2 -->
+    <div class="template" onclick="selectTemplate('Template 2')">
+        <h2>Template 2</h2>
+        <p class="template-description">Vibrant colors and dynamic layout for an energetic blog atmosphere.</p>
+    </div>
+
+    <!-- Add more templates as needed -->
+
+</main>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 Choose Your Blog Template</p>
+</footer>
+
+<!-- JavaScript to handle template selection -->
+<script>
+    function selectTemplate(templateName) {
+        // You can perform actions when a template is selected, like redirecting to the creation page with the chosen template.
+        alert('Template selected: ' + templateName);
+        // Example: window.location.href = 'create-blog.html?template=' + templateName;
+    }
+</script>
+
+</body>
+</html>
+
